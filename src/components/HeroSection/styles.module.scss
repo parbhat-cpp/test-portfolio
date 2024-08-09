@@ -1,0 +1,50 @@
+@import '../../constants/variables.scss';
+
+.heroContainer {
+    display: flex;
+    margin-top: 3rem;
+    margin-bottom: 6rem;
+
+    .heroimageContainer {
+        align-items: flex-start;
+        flex: 0.4;
+
+        .heroimage {
+            border-radius: 8px;
+        }
+
+        @media only screen and (max-width: 745px) {
+            display: none;
+        }
+    }
+
+    .pageIntro {
+        flex: 0.6;
+
+        h1 {
+            font-size: 42px;
+        }
+
+        p {
+            font-size: 38px;
+            line-height: 0;
+        }
+
+        .name {
+            color: $primary-color;
+            font-weight: bold;
+            font-size: larger;
+        }
+
+        .contact {
+            height: auto;
+            display: flex;
+            align-items: center;
+        }
+
+        @media only screen and (max-width: 745px) {
+            flex: 1;
+        }
+    }
+
+}

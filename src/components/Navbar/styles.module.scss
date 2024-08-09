@@ -1,0 +1,47 @@
+@import '../../constants/variables.scss';
+
+.navbarContainer {
+    padding: 1.2rem 1.8rem;
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+
+    .navbarLogo {
+        color: $primary-color;
+        font-weight: bold;
+        font-size: 28px;
+    }
+
+    .navbarOptions {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+
+        a {
+            color: white;
+            text-decoration: none;
+        }
+    
+        a:hover {
+            text-decoration: underline;
+            cursor: pointer;
+            color: $secondary-color;
+        }
+
+        @media only screen and (max-width: 735px) {
+            display: none;
+        }
+    }
+
+    .navbarMenu {
+        display: flex;
+        align-items: center;
+        display: none;
+
+        @media only screen and (max-width: 735px) {
+            display: block;
+        }
+    }
+}

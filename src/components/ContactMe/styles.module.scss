@@ -1,0 +1,54 @@
+@import "../../constants/variables.scss";
+
+.contactContainer {
+    margin-bottom: 4rem;
+
+    h5 {
+        font-size: 36px;
+        font-weight: 100;
+        text-align: center;
+    }
+
+    .contactBox {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 18px;
+        
+        textarea ,input, input:focus {
+            width: 45vw;
+            background-color: $tartiary-color;
+            color: rgb(169, 169, 169);
+            border: none;
+            outline: none;
+            height: 38px;
+            font-size: 24px;
+            border-radius: 10px;
+            padding: 6px;
+
+            @media only screen and (max-width: 700px) {
+                width: 80vw;
+            }
+        }
+
+        textarea {
+            resize: none;
+            height: 180px;
+        }
+
+        button {
+            border: none;
+            text-align: center;
+            width: 7rem;
+            padding: 8px 12px;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            font-size: 18px;
+            font-weight: 300;
+            background-color: $secondary-color;
+        }
+    }
+}

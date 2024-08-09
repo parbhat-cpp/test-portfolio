@@ -1,0 +1,32 @@
+@import "../../constants/variables.scss";
+
+.footerContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 0;
+    gap: 10px;
+
+    @media only screen and (max-width: 500px) {
+        flex-direction: column;
+        h6 {
+            margin: 0;
+        }
+    }
+}
+
+.divider {
+    height: 100%;
+    width: 1px;
+    background-color: $secondary-color;
+
+    h6 {
+        font-weight: 100;
+    }
+}
+
+.footertext {
+    h6 {
+        font-weight: 100;
+    }
+}

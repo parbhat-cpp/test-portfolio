@@ -1,0 +1,36 @@
+.skillsContainer{
+    margin-bottom: 3rem;
+
+    h5 {
+        font-size: 36px;
+        font-weight: 100;
+        text-align: center;
+    }
+
+    .skillsBox {
+        display: flex;
+        justify-content: center;
+
+        .skills {
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+            width: 80vw;
+
+            @media only screen and (max-width: 485px) {
+                grid-template-columns: auto auto auto;
+            }
+
+            .skill {
+                text-align: center;
+
+                img {
+                    @media only screen and (max-width: 400px) {
+                        height: 60px !important;
+                        width: 60px !important;
+                    }
+                }
+            }
+        }
+    }
+}
+

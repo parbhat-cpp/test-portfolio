@@ -1,0 +1,30 @@
+.projectsContainer {
+    margin-bottom: 4rem;
+
+    h5 {
+        font-size: 36px;
+        font-weight: 100;
+        text-align: center;
+    }
+
+    .projectWrapper {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+
+        .projects {
+            display: grid;
+            grid-template-columns: auto auto auto;
+            column-gap: 20px;
+            row-gap: 20px;
+
+            @media only screen and (max-width: 760px) {
+                grid-template-columns: auto auto;
+            }
+
+            @media only screen and (max-width: 540px) {
+                grid-template-columns: auto;
+            }
+        }
+    }
+}
